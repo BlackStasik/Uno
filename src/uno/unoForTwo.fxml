@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1500.0" style="-fx-background-image: url('/resource/background.png'); -fx-background-repeat: no-repeat; -fx-background-size: cover;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uno.GameForTwoController">
+    <children>
+        <HBox fx:id="top" layoutX="452.0" layoutY="119.0" prefHeight="100.0" prefWidth="550.0" />
+        <HBox fx:id="bottom" layoutX="413.0" layoutY="650.0" prefHeight="220.0" prefWidth="550.0" />
+        <Button layoutX="535.0" layoutY="390.0" mnemonicParsing="false" onAction="#getNext" prefHeight="128.0" prefWidth="89.0" style="-fx-graphic: url('/resource/outer-side.png'); -fx-padding: 0;" />
+        <Button onAction="#newGame" fx:id="current" layoutX="654.0" layoutY="342.0" maxHeight="200.0" maxWidth="150.0" mnemonicParsing="false" prefHeight="225.0" prefWidth="149.0" />
+        <Button layoutX="1341.0" layoutY="704.0" mnemonicParsing="false" onAction="#setRed" prefHeight="32.0" prefWidth="39.0" style="-fx-background-color: #921b1f;" />
+        <Button layoutX="1386.0" layoutY="704.0" mnemonicParsing="false" onAction="#setGreen" prefHeight="32.0" prefWidth="39.0" style="-fx-background-color: #1c1e30;" />
+        <Button layoutX="1341.0" layoutY="744.0" mnemonicParsing="false" onAction="#setYellow" prefHeight="32.0" prefWidth="39.0" style="-fx-background-color: #9e4007;" />
+        <Button layoutX="1386.0" layoutY="744.0" mnemonicParsing="false" onAction="#setBlue" prefHeight="32.0" prefWidth="39.0" style="-fx-background-color: #110e26;" />
+
+    </children>
+</AnchorPane>
